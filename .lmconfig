@@ -1,5 +1,11 @@
 # .lmconfig - Configuration file for LM user preferences
 
+# Set the default API standard
+api=openai
+
+# Set the default model
+model=gpt-4o
+
 # Controls the randomness of the model's output
 temperature=0.5
 
