@@ -1,16 +1,15 @@
-This repository is empty. Any task executed on it should be considered a new capability and needs to be created.
 
-## .llmconfig File
+## .lmconfig File
 
-The `.llmconfig` file is a configuration file used to set user preferences and defaults for working with language models (LLMs). It allows users to customize various parameters to control the behavior and output of the model.
+The `.lmconfig` file is a configuration file used to set user preferences and defaults for working with language models (LMs). It allows users to customize various parameters to control the behavior and output of the models on the system.
 
-### Example .llmconfig File
+### Example .lmconfig File
 
 ```
-# .llmconfig - Configuration file for LLM user preferences
+# .lmconfig - Configuration file for LLM user preferences
 
 # Controls the randomness of the model's output
-temperature=0.7
+temperature=0.5
 
 # Default prompt for instructing the model
 instruct_prompt="Please provide a summary of the following text:"
