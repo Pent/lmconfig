@@ -1,10 +1,9 @@
 # .lmconfig - Configuration file for LM user preferences
 
-# Set the default API standard
-api=openai
-
 # Set the default model
-model=gpt-4o
+api=openai
+model=Donnager-70B-v1a-Q4_K_M.gguf
+model_provider="local"
 
 # Controls the randomness of the model's output
 temperature=0.5
@@ -25,4 +24,45 @@ top_p=0.9
 frequency_penalty=0.5
 
 # Penalizes new tokens based on whether they appear in the text so far
-presence_penalty=0.6
+presence_penalty=0.6        # 
+
+# Sampling and Output Control
+min_tokens=10               # Minimum number of tokens to generate
+repetition_penalty=1.1      # Penalize repeated phrases or tokens
+top_k=50                    # Limit sampling to top k most likely tokens
+
+# Safety and Filtering
+safe_mode=true              # Enable content safety filters
+profanity_filter=true       # Block inappropriate language
+toxicity_threshold=0.3      # Adjust sensitivity of content filtering
+
+# Contextual and Memory Parameters
+memory_retention=3          # Number of previous interactions to remember
+context_window=4000         # Maximum context length in tokens
+conversation_mode=true      # Enable conversational context tracking
+
+# Prompt Engineering
+system_role="helpful assistant"  # Define the AI's primary behavioral context
+fallback_prompt="I'm not sure. Could you rephrase or provide more details?"  # Default response for uncertain scenarios
+
+# Output Formatting
+output_format="markdown"    # Preferred response formatting
+line_length=80              # Maximum characters per line
+code_highlighting=true      # Enable syntax highlighting for code
+
+# Performance and Efficiency
+stream_output=true          # Enable token-by-token streaming
+response_timeout=30         # Maximum seconds to generate a response
+cache_responses=true        # Store and potentially reuse similar responses
+
+# Logging and Debugging
+log_interactions=false      # Enable interaction logging
+debug_mode=false            # Provide additional diagnostic information
+
+# Multilingual Support
+default_language="en"       # Primary language for responses
+translation_mode=false      # Automatically detect and translate input/output
+
+# Experimental Features
+creative_mode=false         # Encourage more imaginative responses
+role_play=false             # Allow more flexible persona adoption
