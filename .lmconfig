@@ -1,7 +1,7 @@
-# .llmconfig - Configuration file for LLM user preferences
+# .lmconfig - Configuration file for LM user preferences
 
 # Controls the randomness of the model's output
-temperature=0.7
+temperature=0.5
 
 # Default prompt for instructing the model
 instruct_prompt="Please provide a summary of the following text:"
